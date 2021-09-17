@@ -1,0 +1,210 @@
+<html>
+
+<head>
+    <title> my first html page</title>
+</head>
+
+<body>
+    <img src="C:\UI\images\3.jpg" width="100px " height="100px " alt="this is displayed" />
+    <div>
+        <ol type="i">
+            <li>india</li>
+            <li>japan</li>
+            <li>australia</li>
+            <li>canada</li>
+
+        </ol>
+        <ul type="square">
+            <li>tomto</li>
+            <li>beens</li>
+            <li>potato</li>
+            <li>brinjal</li>
+        </ul>
+        <br />
+
+        <a href="http://google.com"> GOOGLE</a>
+        <div>
+            <a href="http://google.com" target="_blank"> GOOGLE</a>
+        </div>
+        <br />
+        <table border="2px">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Department</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>bhagi</td>
+                <td>22</td>
+                <td>eee</td>
+                <td>74</td>
+            </tr>
+            <tr>
+                <td>bindu</td>
+                <td>23</td>
+                <td>ece</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>kalyani</td>
+                <td>23</td>
+                <td>ece</td>
+                <td>70</td>
+            </tr>
+
+        </table>
+        <div>
+            <h1> REGISTRATION FORM</h1>
+            <form action="http://google.com" method="get">
+                <div>
+                    <span>Name:</span>
+                </div>
+               <!--{this is not use instead of by using pattern attribute}
+                <div>
+                    <input type="text"  size="30" minlength="4" maxlength="5" placeholder="enter your name" name="usernme" value="bhagi"/>
+                </div>
+            -->
+                <br/>
+                <br/>
+                <div>
+                    <input type="text"  pattern="[a-zA-Z]{4,}" placeholder="enter your name" name="usernme" value="bhagi"/>
+                </div>
+                <br />
+                
+                <div>
+                    <span>Age:</span>
+                </div>
+                <div>
+                    <input type="text" name="age" value="22" readonly disabled />
+                </div>
+                <!--{using type="number the pattern attribute is not correct if the type="text" then use pattern attribute}
+                <div>
+                    <span>password:</span>
+                </div>
+                <div>
+                    <input type="number"  />
+                </div>
+            -->
+                <div>
+                    <span>password:</span>
+                </div>
+                <div>
+                    <input type="text" pattern="[a-zA-Z0-9*&]{8}" />
+                </div>
+                <br/>
+                <div>
+                    <span>Gender</span>
+                </div>
+                <div>
+
+                    <input type="radio" name="gender" value="m"/>
+                    <span>Male</span>
+                    <input type="radio"  checked name="gender" value="f" />
+                    <span>Female</span>
+                </div>
+                <br />
+                <div>
+                    <span>Countries</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="text" value="ind" />
+                    <span>india</span>
+                </div>
+                <div>
+                    <input type="checkbox"  checked name="text" value="can" />
+                    <span>Canada</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="text" value="aus" />
+                    <span>Australia</span>
+                </div>
+                <br/>
+                <br/>
+                <span>Lived in cities</span>
+                    <input list="cities"/>
+                    <datalist id="cities">
+                        <option>bengaluru</option>
+                        <option selected>delhi</option>
+                        <option>kolkata</option>
+                        <option>chennai</option>
+                    </datalist>
+                <br />
+                    <span>Lived in cities</span>
+                    <select name="city" multiple >
+                        <option>bengaluru</option>
+                        <option selected>delhi</option>
+                        <option>kolkata</option>
+                        <option>chennai</option>
+                    </select>
+                    <br/>
+                    <br/>
+                    <br/>
+                    favourite color:
+                    <input type="color"/>
+                    <br/>
+                    <br/>
+                    email id:
+                    <input type="text"/>
+                    <br/>
+                    <br/>
+                    phone number:
+                    <input type="number"/>
+                    <br/>
+                    <br/>
+                    your date of birth:
+                    <input type="date"/>
+                    <br/>
+                    <br/>
+                    your date time:
+                    <input type="time"/>
+                    <br/>
+                    <br/>
+                    job applied details:
+                    <input type="datetime-local"/>
+                    <br/>
+                    <br/>
+                    your resume:
+                    <input type="file" multiple />
+                    <br/>
+                    <br/>
+                    Address:
+                    <textarea>
+
+                    </textarea>
+                    <br />
+                    <br/>
+                    <input type="button" value="click me" />
+                    <input type="submit" value="submit" />
+                    <input type="reset"/>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
